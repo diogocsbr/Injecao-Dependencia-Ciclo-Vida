@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<label>Transient</label><span>@ViewBag.Transient_i</span>
+<br />
+<label>Scoped</label><span>@ViewBag.Scoped_i</span>
+<br />
+<label>Singleton</label><span>@ViewBag.Singleton_i</span>
+<br />
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Tipo de Serviço</th>
+            <th>Request</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="background-color: darksalmon">
+                Transient
+            </td>
+            <td style="background-color: darksalmon">
+                @ViewBag.Transient_id
+            </td>
+
+        </tr>
+        <tr>
+            <td>Scoped</td>
+            <td>@ViewBag.Scoped_id</td>
+
+        </tr>
+        <tr>
+            <td style="background-color: aquamarine">
+                Singleton
+            </td>
+            <td style="background-color: aquamarine">
+                @ViewBag.Singleton_id
+            </td>
+
+        </tr>
+    </tbody>
+</table>

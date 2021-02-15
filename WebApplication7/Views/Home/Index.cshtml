@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+
+    <label style="padding-right: 10px">Transient</label><span>@ViewBag.Transient_i</span><br />
+    <label style="padding-right: 10px">Scoped</label><span>@ViewBag.Scoped_i</span><br />
+    <label style="padding-right: 10px">Singleton</label><span>@ViewBag.Singleton_i</span><br />
+
+    <label style="padding-right: 10px">Transient2</label><span>@ViewBag.Transient_i2</span><br />
+    <label style="padding-right: 10px">Scoped2</label><span>@ViewBag.Scoped_i2</span><br />
+    <label style="padding-right: 10px">Singleton2</label><span>@ViewBag.Singleton_i2</span><br />
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Tipo de Serviço</th>
+                <th>Request</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="background-color: darksalmon">
+                    Transient
+                </td>
+                <td style="background-color: darksalmon">
+                    @ViewBag.Transient_id
+                </td>
+                <td style="background-color: darksalmon">
+                    @ViewBag.Transient_id2
+                </td>
+            </tr>
+            <tr>
+                <td>Scoped</td>
+                <td>@ViewBag.Scoped_id</td>
+                <td>@ViewBag.Scoped_id2</td>
+            </tr>
+            <tr>
+                <td style="background-color: aquamarine">
+                    Singleton
+                </td>
+                <td style="background-color: aquamarine">
+                    @ViewBag.Singleton_id
+                </td>
+                <td style="background-color: aquamarine">
+                    @ViewBag.Singleton_id2
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
